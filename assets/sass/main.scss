@@ -1,0 +1,130 @@
+* {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+.panel {
+  font-size: 1.6rem;
+}
+
+body {
+  background-color: rgba(pink, 0.5);
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+  min-height: 80vh;
+}
+
+.header {
+  background-color: #ffb714;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-lg {
+  width: 15rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.nuble {
+  font-size: 2rem;
+  display: flex;
+  width: 20rem;
+  justify-content: space-around;
+  transform: translateY(4rem);
+}
+
+.nuble li {
+  display: block;
+  font-weight: bolder;
+  color: white;
+  padding: 1rem;
+  border: solid white 2px;
+  border-radius: 1rem;
+  min-width: 5rem;
+  text-align: center;
+  margin-left: 0.5rem;
+}
+
+.board {
+  background-color: rgba(darkblue, 0.05);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+.tile {
+  color: rgba(black, 0.6);
+  height: 6rem;
+  width: 6rem;
+  font-size: 3rem;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid plum;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0.3rem;
+  box-shadow: plum 0 0 1rem;
+}
+
+.empty {
+  color: white;
+  height: 6rem;
+  width: 6rem;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  //border: 2px solid plum;
+  border-radius: 10px;
+  background-color: rgba(plum, 0.5);
+  margin: 0.3rem;
+}
+
+.tile-container {
+  display: flex;
+}
+
+.logs {
+  //margin-left: 5rem;
+  //margin-right: 5rem;
+  //margin-top: 3.5rem;
+  background-color: rgba(grey, 0.2);
+  //height: 50vh;
+
+}
+
+.panel button {
+  width: 20rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background-color: rgba(red,0.3);
+  color: white;
+}
+
+.panel button span {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.controls {
+  position: static;
+  bottom: 0;
+  //padding: 3rem;
+  display: flex;
+  justify-content: center;
+  //background-color: ;
+}

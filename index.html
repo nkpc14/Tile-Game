@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>NUBLE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body class="d-flex flex-column">
+
+
+<nav class="navbar navbar-expand-lg m-0 navbar-light header">
+    <ul class="nuble">
+        <li>N</li>
+        <li>U</li>
+        <li>B</li>
+        <li>L</li>
+        <li>E</li>
+    </ul>
+</nav>
+<div class="main flex-column flex-lg-row">
+    <div class="row col-lg">
+        <div class="panel row col col-lg-3">
+            <button type="button" class="btn col-12 mr-md-2 col-md">
+                TIME : <span class="btn " id="timer">00:00:00</span>
+            </button>
+            <button type="button" class="btn col-12  col-md mr-md-2">
+                MOVES: <span class="btn" id="moves">0</span>
+            </button>
+            <button type="button" onclick="scoreBoard.world()" class="btn col-12 mr-md-2 col-md">
+                NEW GAME <span class="btn"></span>
+            </button>
+            <button type="button" onclick="scoreBoard.world()" class="btn col-12 col-md mr-md-2">
+                RESET <span class="btn"></span>
+            </button>
+        </div>
+        <div id="board" class="board col p-lg-5 m-0 d-flex">
+
+        </div>
+    </div>
+    <div class="logs row p-5 col-lg-2 ml-lg-2 mr-auto mr-lg-5">
+        <h3 style="color: blue;font-weight: bolder">Your Moves</h3>
+        <div id="logs">
+
+        </div>
+
+    </div>
+</div>
+<div class="row controls m-0 pl-lg-5">
+    <button type="button" onclick="scoreBoard.easy()" class="btn btn-success btn-lg active mr-2 mt-2 mr-lg-3 col-12 col-md">EASY</button>
+    <button type="button" onclick="scoreBoard.medium()" class="btn btn-warning btn-lg active btn-lg mr-2 mt-2 mr-lg-3 col-12 col-md">MEDIUM</button>
+    <button type="button" onclick="scoreBoard.difficult()" class="btn btn-danger btn-lg active btn-lg mr-2 mt-2 mr-lg-3 col-12 col-md">DIFFICULT</button>
+    <button type="button" onclick="scoreBoard.custom()" class="btn btn-dark btn-lg active btn-lg mr-2 mt-2 col-12 col-md">CUSTOM</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="assets/js/js.js"></script>
+<script src="assets/js/StopWatch.js"></script>
+</body>
+</html>
